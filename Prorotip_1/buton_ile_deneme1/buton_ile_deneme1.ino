@@ -73,10 +73,10 @@ void loop()
  
   servo1.attach(2);
   servo2.attach(3);
-  servo3.attach(8);
+  servo3.attach(4);
   servo4.attach(5);
-  servo5.attach(10);
-  servo6.attach(4);
+  servo5.attach(8);
+  servo6.attach(10);
   Serial.println("attach");
   switch (sayac) // sayaca göre switch kodunu çalıştır
   {
@@ -393,7 +393,7 @@ void loop()
 
 void deneme(int sayi){
 
-det();
+    det();
   switch (sayi) {
     case 1:
     Serial.println("A sesi");
