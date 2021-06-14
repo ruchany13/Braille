@@ -3,9 +3,6 @@
 #include <TMRpcm.h>
 #include <SPI.h>
 
-// Deneme yazısı
-//deneme 2
-
 #define SD_pin 53
 TMRpcm tmrpcm;
 
@@ -400,175 +397,175 @@ det();
   switch (sayi) {
     case 1:
     Serial.println("A sesi");
-    tmrpcm.setVolume(6);                    //0 to 7. Set volume level
+    tmrpcm.setVolume(5);                    //0 to 7. Set volume level
     tmrpcm.play("a.wav");         //the sound file "a" will play each time the arduino powers up, or is reset
     break;
 
     case 2:
     Serial.println("B sesi");
-    tmrpcm.setVolume(6);
+    tmrpcm.setVolume(5);
     tmrpcm.play("b.wav");
     break;
 
     case 3:
     Serial.println("C sesi");
-    tmrpcm.setVolume(6);
+    tmrpcm.setVolume(5);
     tmrpcm.play("c.wav");
     break;
 
     case 4:
     Serial.println("Ç sesi");
-    tmrpcm.setVolume(6);
+    tmrpcm.setVolume(5);
     tmrpcm.play("c2.wav");
     break;
 
     case 5:
     Serial.println("D sesi");
-    tmrpcm.setVolume(6);
+    tmrpcm.setVolume(5);
     tmrpcm.play("d.wav");
     break;
 
     case 6:
     Serial.println("E sesi");
-    tmrpcm.setVolume(6);
+    tmrpcm.setVolume(5);
     tmrpcm.play("e.wav");
     break;
 
     case 7:
     Serial.println("F sesi");
-    tmrpcm.setVolume(6);
+    tmrpcm.setVolume(5);
     tmrpcm.play("f.wav");
     break;
 
     case 8:
     Serial.println("G sesi");
-    tmrpcm.setVolume(6);
+    tmrpcm.setVolume(5);
     tmrpcm.play("g.wav");
     break;
 
     case 9:
     Serial.println("Ğ sesi");
-    tmrpcm.setVolume(6);
+    tmrpcm.setVolume(5);
     tmrpcm.play("g2.wav");
     break;
 
     case 10:
     Serial.println("H sesi");
-    tmrpcm.setVolume(6);
+    tmrpcm.setVolume(5);
     tmrpcm.play("h.wav");
     break;
 
     case 11:
     Serial.println("I sesi");
-    tmrpcm.setVolume(6);
+    tmrpcm.setVolume(5);
     tmrpcm.play("i2.wav");
     break;
 
     case 12:
     Serial.println("İ sesi");
-    tmrpcm.setVolume(6);
+    tmrpcm.setVolume(5);
     tmrpcm.play("i.wav");
     break;
 
     case 13:
     Serial.println("J sesi");
-    tmrpcm.setVolume(6);
+    tmrpcm.setVolume(5);
     tmrpcm.play("j.wav");
     break;
 
     case 14:
     Serial.println("K sesi");
-    tmrpcm.setVolume(6);
+    tmrpcm.setVolume(5);
     tmrpcm.play("k.wav");
     break;
 
     case 15:
     Serial.println("L sesi");
-    tmrpcm.setVolume(6);
+    tmrpcm.setVolume(5);
     tmrpcm.play("l.wav");
     break;
 
     case 16:
     Serial.println("M sesi");
-    tmrpcm.setVolume(6);
+    tmrpcm.setVolume(5);
     tmrpcm.play("m.wav");
     break;
 
     case 17:
     Serial.println("N sesi");
-    tmrpcm.setVolume(6);
+    tmrpcm.setVolume(5);
     tmrpcm.play("n.wav");
     break;
 
     case 18:
     Serial.println("O sesi");
-    tmrpcm.setVolume(6);
+    tmrpcm.setVolume(5);
     tmrpcm.play("o.wav");
     break;
 
     case 19:
     Serial.println("Ö sesi");
-    tmrpcm.setVolume(6);
+    tmrpcm.setVolume(5);
     tmrpcm.play("o2.wav");
     break;
 
     case 20:
     Serial.println("P sesi");
-    tmrpcm.setVolume(6);
+    tmrpcm.setVolume(5);
     tmrpcm.play("p.wav");
     break;
 
     case 21:
     Serial.println("R sesi");
-    tmrpcm.setVolume(6);
+    tmrpcm.setVolume(5);
     tmrpcm.play("r.wav");
     break;
 
     case 22:
     Serial.println("S sesi");
-    tmrpcm.setVolume(6);
+    tmrpcm.setVolume(5);
     tmrpcm.play("s.wav");
     break;
 
     case 23:
     Serial.println("Ş sesi");
-    tmrpcm.setVolume(6);
+    tmrpcm.setVolume(5);
     tmrpcm.play("s2.wav");
     break;
 
     case 24:
     Serial.println("T sesi");
-    tmrpcm.setVolume(6);
+    tmrpcm.setVolume(5);
     tmrpcm.play("t.wav");
     break;
 
     case 25:
     Serial.println("U sesi");
-    tmrpcm.setVolume(6);
+    tmrpcm.setVolume(5);
     tmrpcm.play("u.wav");
     break;
 
     case 26:
     Serial.println("Ü sesi");
-    tmrpcm.setVolume(6);
+    tmrpcm.setVolume(5);
     tmrpcm.play("u2.wav");
     break;
 
     case 27:
     Serial.println("V sesi");
-    tmrpcm.setVolume(6);
+    tmrpcm.setVolume(5);
     tmrpcm.play("v.wav");
     break;
 
     case 28:
     Serial.println("Y sesi");
-    tmrpcm.setVolume(6);
+    tmrpcm.setVolume(5);
     tmrpcm.play("y.wav");
     break;
 
     case 29:
     Serial.println("Z sesi");
-    tmrpcm.setVolume(6);
+    tmrpcm.setVolume(5);
     tmrpcm.play("z.wav");
     break;
   }
