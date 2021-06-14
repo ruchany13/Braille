@@ -1,6 +1,7 @@
 #define Derece 1500
 #define Ry 0
 
+// Deneme
 
 void setup() {
   // put your setup code here, to run once:
