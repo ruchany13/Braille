@@ -4,6 +4,7 @@
 #include <SPI.h>
 
 // Deneme yazısı
+//deneme 2
 
 #define SD_pin 53
 TMRpcm tmrpcm;
