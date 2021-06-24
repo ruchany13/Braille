@@ -43,21 +43,24 @@ void loop() {
     
     if (durum_yukari == HIGH and sayac < 29)
     {
+      int alfabe [] = {1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29} ;
+      String ses;
+      ses = String(alfabe[sayac-1])+ ".wav";
+      char *ses2;
+      ses.toCharArray(ses2, 6);
+      tmrpcm.setVolume(6);              
+      tmrpcm.play(ses2);
+      delay(300);
       sayac++; 
     }
+    
     else if ( durum_asagi == HIGH and sayac > 0)
     {
       sayac--; 
     }
     
     
-    int alfabe [] = {1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29} ;
-    String ses;
-    ses = String(alfabe[sayac-1])+ ".wav";
-    char *ses2;
-    ses.toCharArray(ses2, 6);
-    tmrpcm.setVolume(6);              
-    tmrpcm.play(ses2);
+    
     
   durum_menu = digitalRead(24); 
   }
@@ -68,7 +71,7 @@ void loop() {
   int servo [] = {a,k,k,k,k,k, a,a,k,k,k,k, a,k,k,a,k,k, a,k,k,k,k,a, a,k,k,a,a,k, a,k,k,k,a,k, a,a,k,a,k,k, a,a,k,a,a,k, a,a,k,k,k,a, 
   a,a,k,k,a,k, k,k,a,k,a,k, k,a,k,a,k,k, k,a,k,a,a,k, a,k,a,k,k,k, a,a,a,k,k,k, a,k,a,a,k,k, a,k,a,a,a,k, a,k,a,k,a,k, 
   k,a,k,a,k,a, a,a,a,a,k,k, a,a,a,k,a,k, k,a,a,a,k,k, a,k,k,a,k,a, k,a,a,a,a,k, a,k,a,k,k,a,  a,a,k,k,a,a, a,a,a,k,k,a, a,k,a,a,a,a, a,k,a,k,a,a};
-
+  
   sayac = (sayac-1) * 6;
   srituhobby.setPWM(0, 0, servo[sayac]);
   srituhobby.setPWM(1, 0, servo[sayac+1]);
@@ -77,4 +80,7 @@ void loop() {
   srituhobby.setPWM(4, 0, servo[sayac+4]);
   srituhobby.setPWM(5, 0, servo[sayac+5]);
   sayac = (sayac+1)/6;
+  Serial.print("After Servo: ");
+  Serial.println(sayac);
+  delay(200);
 }
