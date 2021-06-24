@@ -5,8 +5,8 @@
 #include <Adafruit_PWMServoDriver.h>
 
 Adafruit_PWMServoDriver srituhobby = Adafruit_PWMServoDriver();
-#define a 300
-#define k 150 
+#define servon  300
+#define servoff 150 
 #define SD_pin 53
 TMRpcm tmrpcm;
 
@@ -53,6 +53,7 @@ void loop()
     else if ( durum_asagi == HIGH and sayac > 0)
     {
       sayac--; 
+      delay(200);
       ses(sayac);
     }
     
@@ -62,25 +63,12 @@ void loop()
   delay(200);
   ses(sayac);
 
-  int servo [] = {a,k,k,k,k,k, a,a,k,k,k,k, a,k,k,a,k,k, a,k,k,k,k,a, a,k,k,a,a,k, a,k,k,k,a,k, a,a,k,a,k,k, a,a,k,a,a,k, a,a,k,k,k,a, 
-  a,a,k,k,a,k, k,k,a,k,a,k, k,a,k,a,k,k, k,a,k,a,a,k, a,k,a,k,k,k, a,a,a,k,k,k, a,k,a,a,k,k, a,k,a,a,a,k, a,k,a,k,a,k, 
-  k,a,k,a,k,a, a,a,a,a,k,k, a,a,a,k,a,k, k,a,a,a,k,k, a,k,k,a,k,a, k,a,a,a,a,k, a,k,a,k,k,a,  a,a,k,k,a,a, a,a,a,k,k,a, a,k,a,a,a,a, a,k,a,k,a,a};
   
-  sayac = (sayac-1) * 6;
-  srituhobby.setPWM(0, 0, servo[sayac]);
-  srituhobby.setPWM(1, 0, servo[sayac+1]);
-  srituhobby.setPWM(2, 0, servo[sayac+2]);
-  srituhobby.setPWM(3, 0, servo[sayac+3]);
-  srituhobby.setPWM(4, 0, servo[sayac+4]);
-  srituhobby.setPWM(5, 0, servo[sayac+5]);
-  sayac = (sayac+1)/6;
-  Serial.print("After Servo: ");
-  Serial.println(sayac);
 
   
-  /*
+  switch(sayac)
   {
-
+    
     case 1:
      
      
@@ -383,7 +371,7 @@ void loop()
      srituhobby.setPWM(3, 0, servoff);
      srituhobby.setPWM(4, 0, servoff);
      srituhobby.setPWM(5, 0, servoff);
-  }*/
+  }
   delay(200);
 }
 
