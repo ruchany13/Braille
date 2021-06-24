@@ -5,8 +5,8 @@
 #include <Adafruit_PWMServoDriver.h>
 
 Adafruit_PWMServoDriver srituhobby = Adafruit_PWMServoDriver();
-#define servon 300
-#define servoff 150 
+#define a 300
+#define k 150 
 #define SD_pin 53
 TMRpcm tmrpcm;
 

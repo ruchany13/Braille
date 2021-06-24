@@ -45,12 +45,20 @@ void loop() {
     {
       int alfabe [] = {1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29} ;
       String ses;
+<<<<<<< HEAD
       ses = String(alfabe[sayac-1])+ ".wav";
       char *ses2;
       ses.toCharArray(ses2, 6);
       tmrpcm.setVolume(6);              
       tmrpcm.play(ses2);
       delay(300);
+=======
+      ses = String(alfabe[sayac])+ ".wav";
+      char *ses2;
+      ses.toCharArray(ses2, 5);
+      tmrpcm.setVolume(6);              
+      tmrpcm.play(ses2);
+>>>>>>> d9ca44b06ebbc4f9b98a9931dd7100ec87ceef2a
       sayac++; 
     }
     
@@ -60,8 +68,11 @@ void loop() {
     }
     
     
+<<<<<<< HEAD
     
     
+=======
+>>>>>>> d9ca44b06ebbc4f9b98a9931dd7100ec87ceef2a
   durum_menu = digitalRead(24); 
   }
 
