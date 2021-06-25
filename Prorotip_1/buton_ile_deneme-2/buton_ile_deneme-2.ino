@@ -5,7 +5,7 @@
 #include <Adafruit_PWMServoDriver.h>
 
 Adafruit_PWMServoDriver srituhobby = Adafruit_PWMServoDriver();
-#define servon  300
+#define servon  200
 #define servoff 150 
 #define SD_pin 53
 TMRpcm tmrpcm;
@@ -17,8 +17,6 @@ int durum_yukari;
 int durum_asagi ;
 int durum_menu ;
 int sayac = 0;
-
-unsigned long sure, sure2;
 
 void setup()
 {
@@ -45,7 +43,8 @@ void loop()
     
     if (durum_yukari == HIGH and sayac < 29)
     {
-      sayac++; 
+      sayac++;
+      Serial.println(sayac); 
       delay(200);
       ses(sayac);
     } 
@@ -57,45 +56,35 @@ void loop()
       ses(sayac);
     }
     
-  durum_menu = digitalRead(menu);
+    durum_menu = digitalRead(menu);
   }
-
+  
   delay(200);
   ses(sayac);
-
-  
-
   
   switch(sayac)
   {
-    
     case 1:
-     
-     
      srituhobby.setPWM(0, 0, servon);
      srituhobby.setPWM(1, 0, servoff);
      srituhobby.setPWM(2, 0, servoff);
      srituhobby.setPWM(3, 0, servoff);
      srituhobby.setPWM(4, 0, servoff);
      srituhobby.setPWM(5, 0, servoff);
-     
-      
+     Serial.println("KOD Gidiyor");
       break;
 
-    case 2: 
-    
-     
+    case 2:
      srituhobby.setPWM(0, 0, servon);
      srituhobby.setPWM(1, 0, servon);
      srituhobby.setPWM(2, 0, servoff);
      srituhobby.setPWM(3, 0, servoff);
      srituhobby.setPWM(4, 0, servoff);
      srituhobby.setPWM(5, 0, servoff);
-     
+     Serial.println("KOD Gidiyor2");
       break;
 
     case 3:
-     
      srituhobby.setPWM(0, 0, servon);
      srituhobby.setPWM(1, 0, servoff);
      srituhobby.setPWM(2, 0, servoff);
@@ -105,7 +94,6 @@ void loop()
       break;
 
     case 4:
-    
      srituhobby.setPWM(0, 0, servon);
      srituhobby.setPWM(1, 0, servoff);
      srituhobby.setPWM(2, 0, servoff);
@@ -115,7 +103,6 @@ void loop()
       break;
 
     case 5:
-     
      srituhobby.setPWM(0, 0, servon);
      srituhobby.setPWM(1, 0, servoff);
      srituhobby.setPWM(2, 0, servoff);
@@ -124,8 +111,7 @@ void loop()
      srituhobby.setPWM(5, 0, servoff);
       break;
 
-    case 6: 
-     
+    case 6:
      srituhobby.setPWM(0, 0, servon);
      srituhobby.setPWM(1, 0, servoff);
      srituhobby.setPWM(2, 0, servoff);
@@ -134,8 +120,7 @@ void loop()
      srituhobby.setPWM(5, 0, servoff);
       break;
 
-    case 7: 
-     
+    case 7:
      srituhobby.setPWM(0, 0, servon);
      srituhobby.setPWM(1, 0, servon);
      srituhobby.setPWM(2, 0, servoff);
@@ -145,7 +130,6 @@ void loop()
       break;
 
     case 8:
-     
      srituhobby.setPWM(0, 0, servon);
      srituhobby.setPWM(1, 0, servon);
      srituhobby.setPWM(2, 0, servoff);
@@ -155,7 +139,6 @@ void loop()
       break;
 
     case 9:
-     
      srituhobby.setPWM(0, 0, servon);
      srituhobby.setPWM(1, 0, servon);
      srituhobby.setPWM(2, 0, servoff);
@@ -165,7 +148,6 @@ void loop()
       break;
 
     case 10:
-     
      srituhobby.setPWM(0, 0, servon);
      srituhobby.setPWM(1, 0, servon);
      srituhobby.setPWM(2, 0, servoff);
@@ -174,8 +156,7 @@ void loop()
      srituhobby.setPWM(5, 0, servoff);
       break;
 
-    case 11: 
-     
+    case 11:
      srituhobby.setPWM(0, 0, servoff);
      srituhobby.setPWM(1, 0, servoff);
      srituhobby.setPWM(2, 0, servon);
@@ -184,8 +165,7 @@ void loop()
      srituhobby.setPWM(5, 0, servoff);
       break;
 
-    case 12: 
-     
+    case 12:
      srituhobby.setPWM(0, 0, servoff);
      srituhobby.setPWM(1, 0, servon);
      srituhobby.setPWM(2, 0, servoff);
@@ -195,7 +175,6 @@ void loop()
       break;
 
     case 13:
-     
      srituhobby.setPWM(0, 0, servoff);
      srituhobby.setPWM(1, 0, servon);
      srituhobby.setPWM(2, 0, servoff);
@@ -205,7 +184,6 @@ void loop()
       break;
 
     case 14:
-     
      srituhobby.setPWM(0, 0, servon);
      srituhobby.setPWM(1, 0, servoff);
      srituhobby.setPWM(2, 0, servon);
@@ -215,7 +193,6 @@ void loop()
       break;
 
     case 15:
-     
      srituhobby.setPWM(0, 0, servon);
      srituhobby.setPWM(1, 0, servon);
      srituhobby.setPWM(2, 0, servon);
@@ -224,8 +201,7 @@ void loop()
      srituhobby.setPWM(5, 0, servoff);
       break;
 
-    case 16: 
-     
+    case 16:
      srituhobby.setPWM(0, 0, servon);
      srituhobby.setPWM(1, 0, servoff);
      srituhobby.setPWM(2, 0, servon);
@@ -234,8 +210,7 @@ void loop()
      srituhobby.setPWM(5, 0, servoff);
       break;
 
-    case 17: 
-    
+    case 17:
      srituhobby.setPWM(0, 0, servon);
      srituhobby.setPWM(1, 0, servoff);
      srituhobby.setPWM(2, 0, servon);
@@ -245,7 +220,6 @@ void loop()
       break;
 
     case 18:
-     
      srituhobby.setPWM(0, 0, servon);
      srituhobby.setPWM(1, 0, servoff);
      srituhobby.setPWM(2, 0, servon);
@@ -255,7 +229,6 @@ void loop()
       break;
 
     case 19:
-     
      srituhobby.setPWM(0, 0, servoff);
      srituhobby.setPWM(1, 0, servon);
      srituhobby.setPWM(2, 0, servoff);
@@ -265,7 +238,6 @@ void loop()
       break;
 
     case 20:
-     
      srituhobby.setPWM(0, 0, servon);
      srituhobby.setPWM(1, 0, servon);
      srituhobby.setPWM(2, 0, servon);
@@ -274,8 +246,7 @@ void loop()
      srituhobby.setPWM(5, 0, servoff);
       break;
 
-    case 21: 
-     
+    case 21:
      srituhobby.setPWM(0, 0, servon);
      srituhobby.setPWM(1, 0, servon);
      srituhobby.setPWM(2, 0, servon);
@@ -284,8 +255,7 @@ void loop()
      srituhobby.setPWM(5, 0, servoff);
       break;
 
-    case 22: 
-     
+    case 22:
      srituhobby.setPWM(0, 0, servoff);
      srituhobby.setPWM(1, 0, servon);
      srituhobby.setPWM(2, 0, servon);
@@ -295,7 +265,6 @@ void loop()
       break;
 
     case 23:
-     
      srituhobby.setPWM(0, 0, servon);
      srituhobby.setPWM(1, 0, servoff);
      srituhobby.setPWM(2, 0, servoff);
@@ -305,7 +274,6 @@ void loop()
       break;
 
     case 24:
-     
      srituhobby.setPWM(0, 0, servoff);
      srituhobby.setPWM(1, 0, servon);
      srituhobby.setPWM(2, 0, servon);
@@ -315,7 +283,6 @@ void loop()
       break;
 
     case 25:
-     
      srituhobby.setPWM(0, 0, servon);
      srituhobby.setPWM(1, 0, servoff);
      srituhobby.setPWM(2, 0, servon);
@@ -324,8 +291,7 @@ void loop()
      srituhobby.setPWM(5, 0, servon);
       break;
 
-    case 26: 
-     
+    case 26:
      srituhobby.setPWM(0, 0, servon);
      srituhobby.setPWM(1, 0, servon);
      srituhobby.setPWM(2, 0, servoff);
@@ -334,8 +300,7 @@ void loop()
      srituhobby.setPWM(5, 0, servon);
       break;
 
-    case 27: 
-     
+    case 27:
      srituhobby.setPWM(0, 0, servon);
      srituhobby.setPWM(1, 0, servon);
      srituhobby.setPWM(2, 0, servon);
@@ -345,7 +310,6 @@ void loop()
       break;
 
     case 28:
-     
      srituhobby.setPWM(0, 0, servon);
      srituhobby.setPWM(1, 0, servoff);
      srituhobby.setPWM(2, 0, servon);
@@ -355,7 +319,6 @@ void loop()
       break;
 
     case 29:
-     
      srituhobby.setPWM(0, 0, servon);
      srituhobby.setPWM(1, 0, servoff);
      srituhobby.setPWM(2, 0, servon);
