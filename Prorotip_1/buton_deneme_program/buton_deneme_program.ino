@@ -44,8 +44,7 @@ void loop()
 int a = 1;
   ses(30);
 
-  while (durum_menu == LOW)
-  {
+  
 
     if (durum_yukari == HIGH)
     {
@@ -64,7 +63,7 @@ int a = 1;
       }
     }
     
-  }
+  
 
 
 }
