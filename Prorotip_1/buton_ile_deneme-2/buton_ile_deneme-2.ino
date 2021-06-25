@@ -48,6 +48,10 @@ void loop()
       delay(200);
       ses(sayac);
     } 
+    else if (sayac == 29)
+    {
+      sayac = 0;
+    }
 
     else if ( durum_asagi == HIGH and sayac > 0)
     {
