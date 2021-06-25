@@ -370,6 +370,100 @@ void servolar(int sayac)
       srituhobby.setPWM(5, 0, servon);
       break;
 
+    case 30:
+
+      srituhobby.setPWM(0, 0, servoff);
+      srituhobby.setPWM(1, 0, servon);
+      srituhobby.setPWM(2, 0, servoff);
+      srituhobby.setPWM(3, 0, servon);
+      srituhobby.setPWM(4, 0, servon);
+      srituhobby.setPWM(5, 0, servoff);
+      break;
+
+    case 31:
+
+      srituhobby.setPWM(0, 0, servon);
+      srituhobby.setPWM(1, 0, servoff);
+      srituhobby.setPWM(2, 0, servoff);
+      srituhobby.setPWM(3, 0, servoff);
+      srituhobby.setPWM(4, 0, servoff);
+      srituhobby.setPWM(5, 0, servoff);
+      break;
+case 32:
+
+      srituhobby.setPWM(0, 0, servon);
+      srituhobby.setPWM(1, 0, servon);
+      srituhobby.setPWM(2, 0, servoff);
+      srituhobby.setPWM(3, 0, servoff);
+      srituhobby.setPWM(4, 0, servoff);
+      srituhobby.setPWM(5, 0, servoff);
+      break;
+case 33:
+
+      srituhobby.setPWM(0, 0, servon);
+      srituhobby.setPWM(1, 0, servoff);
+      srituhobby.setPWM(2, 0, servoff);
+      srituhobby.setPWM(3, 0, servon);
+      srituhobby.setPWM(4, 0, servoff);
+      srituhobby.setPWM(5, 0, servoff);
+      break;
+case 34:
+
+      srituhobby.setPWM(0, 0, servon);
+      srituhobby.setPWM(1, 0, servoff);
+      srituhobby.setPWM(2, 0, servoff);
+      srituhobby.setPWM(3, 0, servon);
+      srituhobby.setPWM(4, 0, servon);
+      srituhobby.setPWM(5, 0, servoff);
+      break;
+case 35:
+
+      srituhobby.setPWM(0, 0, servon);
+      srituhobby.setPWM(1, 0, servoff);
+      srituhobby.setPWM(2, 0, servoff);
+      srituhobby.setPWM(3, 0, servoff);
+      srituhobby.setPWM(4, 0, servon);
+      srituhobby.setPWM(5, 0, servoff);
+      break;
+case 36:
+
+      srituhobby.setPWM(0, 0, servon);
+      srituhobby.setPWM(1, 0, servon);
+      srituhobby.setPWM(2, 0, servoff);
+      srituhobby.setPWM(3, 0, servon);
+      srituhobby.setPWM(4, 0, servoff);
+      srituhobby.setPWM(5, 0, servoff);
+      break;
+case 37:
+
+      srituhobby.setPWM(0, 0, servon);
+      srituhobby.setPWM(1, 0, servon);
+      srituhobby.setPWM(2, 0, servoff);
+      srituhobby.setPWM(3, 0, servon);
+      srituhobby.setPWM(4, 0, servon);
+      srituhobby.setPWM(5, 0, servoff);
+      break;
+case 38:
+
+      srituhobby.setPWM(0, 0, servon);
+      srituhobby.setPWM(1, 0, servon);
+      srituhobby.setPWM(2, 0, servoff);
+      srituhobby.setPWM(3, 0, servoff);
+      srituhobby.setPWM(4, 0, servon);
+      srituhobby.setPWM(5, 0, servoff);
+      break;
+case 39:
+
+      srituhobby.setPWM(0, 0, servoff);
+      srituhobby.setPWM(1, 0, servon);
+      srituhobby.setPWM(2, 0, servoff);
+      srituhobby.setPWM(3, 0, servon);
+      srituhobby.setPWM(4, 0, servoff);
+      srituhobby.setPWM(5, 0, servoff);
+      break;
+
+      
+
     default:
       srituhobby.setPWM(0, 0, servoff);
       srituhobby.setPWM(1, 0, servoff);
