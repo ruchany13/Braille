@@ -53,6 +53,11 @@ void loop()
       sayac = 0;
     }
 
+    else if (sayac == -1)
+    {
+      sayac = 28; 
+    }
+
     else if ( durum_asagi == HIGH and sayac > 0)
     {
       sayac--; 
