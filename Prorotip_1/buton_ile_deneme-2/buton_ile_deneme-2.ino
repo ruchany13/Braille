@@ -61,9 +61,17 @@ void loop()
 
     else if ( durum_asagi == HIGH and sayac >= 0)
     {
-      sayac--; 
+      
+      if (sayac == 0)
+      {
+        sayac--; 
+      }
+      else
+      {
+        sayac--; 
       delay(200);
       ses(sayac);
+      }
     }
     
     durum_menu = digitalRead(menu);
