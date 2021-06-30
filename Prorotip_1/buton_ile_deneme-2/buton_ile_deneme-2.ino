@@ -68,7 +68,7 @@ void loop()
       }
       else
       {
-        sayac--; 
+      sayac--; 
       delay(200);
       ses(sayac);
       }
