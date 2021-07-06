@@ -5,14 +5,14 @@
 #include <Adafruit_PWMServoDriver.h>
 
 Adafruit_PWMServoDriver srituhobby = Adafruit_PWMServoDriver();
-#define servon  200
+#define servon  250
 #define servoff 150 
 #define SD_pin 53
 TMRpcm tmrpcm;
 
 const int yukari = 22;
 const int asagi  = 23;
-const int menu  = 24;
+const int menu  = 25;
 int durum_yukari; 
 int durum_asagi ;
 int durum_menu ;
