@@ -1,8 +1,8 @@
-# Braille Project
+# Braille Project  
 This repo include Yıldızların Aydınlığında Team's Braille Alphabet Teacher device's codes. The codes used be in Arduino module and Raspberry Pi.
 
 ## Braille Alphabet Teacher Device
-Normally, educations of Braille Alphabet are difficult, long time and sometime unreachable. The project aim is make new device for Braille Alphabet Education. This device will make the education accessible, easy and inexpensive. Education will be short with device and teach methodology.
+Normally , educations of Braille Alphabet are difficult, long time and sometime unreachable. The project aim is make new device for Braille Alphabet Education. This device wisll make the education accessible, easy and inexpensive. Education will be short with device and teach methodology.     
 
 ### Features of Device:
 - Device will be cheap, so people can buy this device.
