@@ -7,12 +7,12 @@
 Adafruit_PWMServoDriver srituhobby = Adafruit_PWMServoDriver();
 #define servon  250
 #define servoff 150 
-#define SD_pin 53
+#define SD_pin 4
 TMRpcm tmrpcm;
 
-const int yukari = 22;
-const int asagi  = 23;
-const int menu  = 25;
+const int yukari = 2;
+const int asagi  = 3;
+const int menu  = 6;
 int durum_yukari; 
 int durum_asagi ;
 int durum_menu ;
@@ -26,7 +26,7 @@ void setup()
   Serial.begin(9600);
   srituhobby.begin();
   srituhobby.setPWMFreq(60);
-  tmrpcm.speakerPin = 11;
+  tmrpcm.speakerPin = 9;
   if (!SD.begin(SD_pin)) 
   {        
     Serial.println("Hafıza kartı hatası"); 
@@ -65,12 +65,10 @@ void loop()
       if (sayac == 0)
       {
         sayac--; 
-         
       }
       else
       {
-      sayac--;
-      Serial.println(sayac); 
+      sayac--; 
       delay(200);
       ses(sayac);
       }
